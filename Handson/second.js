@@ -10,7 +10,7 @@ console.log("4.division");
 
 
 
-fs.readFile('./calculator.json',function(err,data)
+fs.readFile('/home/user/PycharmProjects/Nodejs/Input/calculator.json',function(err,data)
 {
     if(err)
     {

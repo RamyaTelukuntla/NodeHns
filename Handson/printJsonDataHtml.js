@@ -24,7 +24,7 @@ app.post('/', function(req, res){
     var name1 = req.body.name;
 
     console.log(name1);
-    fs.readFile('./student.json',function(err,data)
+    fs.readFile('/home/user/PycharmProjects/Nodejs/Input/student.json',function(err,data)
     {
         if(err)
         {

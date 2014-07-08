@@ -11,7 +11,7 @@ var url = require('url');
 app.use(bodyParser());
 app.get('/getvalue', function (req, res) {
     var name1 = req.query.name;
-    fs.readFile('./student.json', function (err, data) {
+    fs.readFile('/home/user/PycharmProjects/Nodejs/Input/student.json', function (err, data) {
         if (err)
         {
 
