@@ -1,0 +1,11 @@
+{
+  "name": "Nodejs Handson",
+  "Author":"Ramya Telukuntla",
+  "dependencies": {
+      "underscore":"*",
+      "jade":"*",
+      "stylus":"*",
+      "Express":"*"
+
+  }
+}
