@@ -15,41 +15,41 @@ console.log("4.division");
 
 fs.readFile('./calculator.json',function(err,data)                   //Reading values from a json file
 {
- if(err)
- {
-     err;
- }
+    if(err)
+    {
+        err;
+    }
     else {
-     n = JSON.parse(data);
-     var n1 = n.values.firstnumber;
-     var n2 = n.values.secondnumber;
+        n = JSON.parse(data);
+        var n1 = n.values.firstnumber;
+        var n2 = n.values.secondnumber;
 
-     var res;
+        var res;
 
 
-     stdin.addListener('data', function (text) {                  // listeners to take input from the keyboard 
-         if (text == 1) {
-             res = n1 + n2;
-             console.log(res);
-         }
-         else if (text == 2) {
-             res = n1 - n2;
-             console.log(res);
-         }
-         else if (text == 3) {
-             res = n1 * n2;
-             console.log(res);
-         }
-         else if (text == 4) {
-             res = n1 / n2;
-             console.log(res);
-         }
-         else {
-             console.log("enter a valid option");
-         }
-     });
- }
- });
+        stdin.addListener('data', function (text) {                  // listeners to take input from the keyboard
+            if (text == 1) {
+                res = n1 + n2;
+                console.log(res);
+            }
+            else if (text == 2) {
+                res = n1 - n2;
+                console.log(res);
+            }
+            else if (text == 3) {
+                res = n1 * n2;
+                console.log(res);
+            }
+            else if (text == 4) {
+                res = n1 / n2;
+                console.log(res);
+            }
+            else {
+                console.log("enter a valid option");
+            }
+        });
+    }
+});
 
 
 

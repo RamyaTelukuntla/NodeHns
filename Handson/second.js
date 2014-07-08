@@ -8,8 +8,6 @@ console.log("2.subtraction");
 console.log("3.multiplication");
 console.log("4.division");
 
-
-
 fs.readFile('/home/user/PycharmProjects/Nodejs/Input/calculator.json',function(err,data)
 {
     if(err)
@@ -20,10 +18,7 @@ fs.readFile('/home/user/PycharmProjects/Nodejs/Input/calculator.json',function(e
         n = JSON.parse(data);
         var n1 = n.values.firstnumber;
         var n2 = n.values.secondnumber;
-
         var res;
-
-
         stdin.addListener('data', function (text) {
             if (text == 1) {
                 res = n1 + n2;

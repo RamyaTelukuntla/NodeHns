@@ -5,6 +5,8 @@
  * Created by user on 1/7/14.
  */
 
+/* program to take  the input values from a html page and display the data related to the input in a new page */
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
@@ -34,7 +36,7 @@ app.post('/', function(req, res){
         {
             var json=data;
             json=JSON.parse(json);
-            var html=json.students[name1].id+'<br>'+json.students[name1].name+'<br>'+json.students[name1].dob;
+            var html=json.students[name1].id+'<br>'+json.students[name1].name+'<br>'+json.students[name1].dob; //getting the data from json based on the input
             res.send(html);
         }
 

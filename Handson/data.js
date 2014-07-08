@@ -14,7 +14,7 @@ app.get('/getvalue', function(req, res){
         '<br>' +
         '<button type="submit">Submit</button>' +
         '</form>';
-        res.send(html);
+    res.send(html);
 });
 app.post('/', function(req, res){
     var name1 = req.body.name;

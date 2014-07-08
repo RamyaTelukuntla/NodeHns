@@ -11,10 +11,8 @@ var app = express();
 var fs=require('fs');
 var url=require('url');
 
-
 app.get('/getname', function(req, res){                 //getname is the name of the api
     var id=req.query.id;
-
     fs.readFile('./profile.json',function(err,data)     //reading a Json data file
     {
         if(err)
@@ -31,7 +29,5 @@ app.get('/getname', function(req, res){                 //getname is the name of
             res.send(html);
         }
     })
-
-
 });
 app.listen(9900);                                       //this program listens to the server at port 9900
