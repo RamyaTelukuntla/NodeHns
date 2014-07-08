@@ -1,3 +1,6 @@
+
+/* program to perform the Arithemetical operations */
+/*Importing libraries*/
 var util=require('util');
 var stdin=process.openStdin();
 var fs=require('fs');
@@ -10,7 +13,7 @@ console.log("4.division");
 
 
 
-fs.readFile('.calculator.json',function(err,data)
+fs.readFile('./calculator.json',function(err,data)                   //Reading values from a json file
 {
  if(err)
  {
@@ -24,7 +27,7 @@ fs.readFile('.calculator.json',function(err,data)
      var res;
 
 
-     stdin.addListener('data', function (text) {
+     stdin.addListener('data', function (text) {                  // listeners to take input from the keyboard 
          if (text == 1) {
              res = n1 + n2;
              console.log(res);
